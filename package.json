@@ -1,0 +1,25 @@
+{
+  "name": "goodeggs-interview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demands/goodeggs-interview.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/demands/goodeggs-interview/issues"
+  },
+  "homepage": "https://github.com/demands/goodeggs-interview#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "fake-eggs": "^1.1.0",
+    "lodash": "^4.17.2"
+  }
+}
