@@ -11,7 +11,19 @@ var people = _.keyBy(peopleIds.map(function (id) {
 var app = express();
 
 app.get('/:id', function (req, res) {
+  if (req.params.id === '500') {
+    res.status(500);
+    res.send("Server error");
+    return;
+  }
+  
+  if (req.params.id === '504') {
+    /* do nothing */
+    return;
+  }
+  
   var person = people[req.params.id];
+  
   if (person) {
     res.json(person);
     return;
@@ -22,4 +34,4 @@ app.get('/:id', function (req, res) {
 var port = process.env.PORT || 3000;
 app.listen(port, function () {
   console.log('server listening on port ' + port);
-})
+});
