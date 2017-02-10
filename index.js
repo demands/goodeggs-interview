@@ -10,6 +10,11 @@ var people = _.keyBy(peopleIds.map(function (id) {
 
 var app = express();
 
+app.get('/', function (req, res) {
+  /* link to documentation */
+  res.redirect('https://github.com/goodeggs/goodeggs-interview/blob/master/README.md');
+})
+
 app.get('/:id', function (req, res) {
   if (req.params.id === '500') {
     res.status(500);
