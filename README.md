@@ -18,6 +18,7 @@ body (JSON) -
     friends: <array of integers between 0 and 149>,
     firstName: <string>,
     lastName: <string>,
+    fullName: <string>,
     <etc...>
   }
 ```
